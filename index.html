@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CDS</title>
+    <link rel="stylesheet" href=css/bootstrap.min.css/>
+    <link rel="stylesheet" href=css/style.css/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1 class="text-center text-bold"> Annex </h1>
+        <div class="col-md-12">
+            <h3 class="text-center text-success text-bold">Format of Account Opening Form for Individual Beneficial Owner </h3>
+            <br>
+            <div class="col-md-2">
+                <h4 class="text-primary text-bold"> Types of Account: </h4>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" id="individual" name="individual"> <span class="label-text">Individual/Resident</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" id="nonResidence" name="nonResidence"> <span class="label-text">Non Resident Nepalese</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" id="foreigner" name="foreigner"> <span class="label-text">Foreigner</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <label>
+                        <img src="https://www.limestone.edu/sites/default/files/user.png" alt="User Image" class="img-thumbnail imageStyle pull-right">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--For Individual/Resident -->
+<div class="container individualTabs">
+    <div class="board">
+        <ul class="nav nav-seq">
+            <div class="liner"></div>
+            <li rel-index="0" class="active">
+                <a href="#step1" class="btn" aria-controls="step1" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </li>
+            <li rel-index="1">
+                <a href="#step2" class="btn disabled" aria-controls="step2" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-phone"></span>
+                </a>
+            </li>
+            <li rel-index="2">
+                <a href="#step3" class="btn disabled" aria-controls="step3" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-tags"></span>
+                </a>
+            </li>
+            <li rel-index="3">
+                <a href="#step4" class="btn disabled" aria-controls="step4" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="step1">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Personal Information </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label>Name of Beneficial Owner *</label>
+                            <input type="text" class="form-control"placeholder="Ram Bahadur Pun">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date of Birth (in B.S.) *</label>
+                            <input type="text" class="form-control" placeholder="2050-12-15">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date of Birth (in A.D.) *</label>
+                            <input type="text" class="form-control" placeholder="1995-12-15">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Gender *</label>
+                            <input type="radio" name="gender"> Male </input>
+                            <input type="radio" name="gender"> Female </input>
+                            <input type="radio" name="gender"> Other </input>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Nationality</label>
+                            <input type="radio" name="nationality" id="nepaliNationality"> Nepali </input>
+                            <input type="radio" name="nationality" id="otherNationality"> Other </input>
+                            <input type="text" class="form-control" id="otherNationalityForm" name="otherNationality" placeholder="Other Nationality"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Citizenship Number *</label>
+                            <input type="text" class="form-control"placeholder="12-5126-5112"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Issue District</label>
+                            <input type="text" class="form-control" placeholder="Lamjung"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2073"/>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label>Passport No.</label>
+                            <input type="text" class="form-control"placeholder="12-5126-5112"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Place of Issue</label>
+                            <input type="text" class="form-control" placeholder="Lamjung"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2073"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Expiry Date</label>
+                            <input type="text" class="form-control" placeholder="2079"/>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label>Types of Identity Card </label>
+                            <input type="text" class="form-control"placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Identification No.</label>
+                            <input type="text" class="form-control" placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="checkbox" id="minor" name="minor"> <span class="label-text"></span>
+                            <label>Minor</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Issuance Authority </label>
+                            <input type="text" class="form-control" placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2079"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="step2">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Address </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label class="text-primary text-bold">Correspondence Address</label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Country *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Zone</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>District *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>VDC / Municipality / Metropolitan *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Tole</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Ward No. *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Block No.</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Telephone No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Mobile No. *</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Fax No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Email ID. *</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label class="text-primary text-bold">Permanent Address</label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Zone</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>District *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>VDC / Municipality / Metropolitan *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Tole</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Ward No. *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Block No.</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Telephone No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Mobile No. *</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Fax No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Email ID. *</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Nearest Landmark</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <h1 class="text-center text-success text-bold"> Details of Family Members </h1>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Grand Father's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Father's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Mother's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Spouse's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Son's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Daughter in-Law's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Father in-Law's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="step3">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Occupation Detail </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label>Occupation *</label>
+                            <div class="input-group input-group-multiple-selectp col-md-12">
+                                <select class="form-control" id="occupationSelector" name="occupationSelector">
+                                    <option value="">Select one</option>
+                                    <option value="1">Service</option>
+                                    <option value="2">Government</option>
+                                    <option value="3">Public/Private Sector</option>
+                                    <option value="4">O/INGO</option>
+                                    <option value="5">Legal Expert</option>
+                                    <option value="6">Expert</option>
+                                    <option value="7">Inessperson</option>
+                                    <option value="8">Student</option>
+                                    <option value="9">Retired</option>
+                                    <option value="10">House Wife</option>
+                                    <option value="Others" id="occupationOthers">Others</option>
+                                </select>
+
+                                <div class="form-group" class="occupationOthersForm" id="occupationOthersForm">
+                                    <br>
+                                    <input type="text" class="form-control" name="occupationOthersForm" placeholder="Occupation"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Types of Business</label>
+                            <div class="input-group input-group-multiple-selectp col-md-12">
+                                <select class="form-control">
+                                    <option value="">Select one</option>
+                                    <option value="1">Manufacturing</option>
+                                    <option value="2">Service Oriented</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Organization's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Address</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Designation</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Financial Details (Income Limit - Annual Details) *</label> <br>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Upto Rs. 1,00,000</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""> <span class="label-text">Upto Rs. From Rs. 1,00,001 to Rs. 2,00,000</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""> <span class="label-text">From Rs. 2,00,001 to Rs. 5,00,000</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Above Rs. 5,00,000</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Standing Instructions for the automatic transactions *</label> <br>
+                            <div class="col-md-6">
+                                <input type="checkbox" name=""> <span class="label-text">Yes</span>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="checkbox" name=""> <span class="label-text">No</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Account Statement *</label> <br>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">As Per Request</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Daily</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Weekly</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">15 Days</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Monthly</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <br> <label>Signature __________________________________ </label>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                            <br>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3 rightThumb text-center">
+                                Right
+                            </div>
+                            <div class="col-md-3 leftThumb text-center">
+                                Left
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="guardianDetail" id="guardianDetail">
+                        <h1 class="text-center text-success text-bold"> Guardian's Detail </h1>
+                        <form>
+                            <div class="form-group col-md-12">
+                                <label>Name / Surname *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder="Name"/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Relationship with applicant *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-bold text-primary">Correspondance Address</label>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Country *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Zone</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>District *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Fax No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Telephone No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Mobile No. *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>PAN No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Email ID *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Gaurdian's Citizenship Number *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <br> <label>Signature * __________________________________ </label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                                <br>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3 rightThumb text-center">
+                                    Right
+                                </div>
+                                <div class="col-md-3 leftThumb text-center">
+                                    Left
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="step4">
+            <div class="default-panel">
+                <div class="row">
+                    <div class="row">
+                        <h1 class="text-center text-success text-bold"> Bank Account Details </h1>
+                        <form>
+                            <label>Types of Bank Account *</label> <br>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""/> <span class="label-text">Saving Account</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""/> <span class="label-text">Current Account</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="form-group col-md-12">
+                                <label>Back Account Number *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Name and Address of Bank *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+
+                        <h1 class="text-center text-success text-bold"> Nominee's Details </h1>
+                        <p class="text-center"> In the event of my death or incapacity, the following named nominee shall be entitled to the balance of my demat account: </p>
+                        <form>
+                            <div class="form-group col-md-12">
+                                <label>Name of Nominee *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Relationship *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Citizenship / Passport No. *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Place of Issue *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Age *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+
+                            <h1 class="text-center text-success text-bold"> Correspondence Address </h1>
+
+                            <div class="form-group col-md-6">
+                                <label>Country *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Zone </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>District *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Telephone No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Fax No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Mobile No. *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>PAN No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Email ID *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <br> <label>Signature * __________________________________ </label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                                <br>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3 rightThumb text-center">
+                                    Right
+                                </div>
+                                <div class="col-md-3 leftThumb text-center">
+                                    Left
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Location Map</span> </label>
+                                <br>
+                                <div class="col-md-12 locationMap text-center">
+                                    <p class="bottomText"> From main Road Street ....... the distance of the Residence is ........ meters (approximately).</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="col-md-12">
+                            <button class="btn btn-success pull-right next-btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container nonResidence">
+    <div class="board">
+        <ul class="nav nav-seq">
+            <div class="liner"></div>
+            <li rel-index="0" class="active">
+                <a href="#nstep1" class="btn" aria-controls="nstep1" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </li>
+            <li rel-index="1">
+                <a href="#nstep2" class="btn disabled" aria-controls="nstep2" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-phone"></span>
+                </a>
+            </li>
+            <li rel-index="2">
+                <a href="#nstep3" class="btn disabled" aria-controls="nstep3" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-tags"></span>
+                </a>
+            </li>
+            <li rel-index="3">
+                <a href="#nstep4" class="btn disabled" aria-controls="nstep4" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="nstep1">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Personal Information </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label>Name of Beneficial Owner *</label>
+                            <input type="text" class="form-control"placeholder="Ram Bahadur Pun">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date of Birth (in B.S.) *</label>
+                            <input type="text" class="form-control" placeholder="2050-12-15">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date of Birth (in A.D.) *</label>
+                            <input type="text" class="form-control" placeholder="1995-12-15">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Gender *</label>
+                            <input type="radio" name="gender"> Male </input>
+                            <input type="radio" name="gender"> Female </input>
+                            <input type="radio" name="gender"> Other </input>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Nationality</label>
+                            <input type="radio" name="nationality" id="nepaliNationality"> Nepali </input>
+                            <input type="radio" name="nationality" id="otherNationality"> Other </input>
+                            <input type="text" class="form-control" id="otherNationalityForm" name="otherNationality" placeholder="Other Nationality"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Citizenship Number *</label>
+                            <input type="text" class="form-control"placeholder="12-5126-5112"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Issue District</label>
+                            <input type="text" class="form-control" placeholder="Lamjung"/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2073"/>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label>Passport No.</label>
+                            <input type="text" class="form-control"placeholder="12-5126-5112"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Place of Issue</label>
+                            <input type="text" class="form-control" placeholder="Lamjung"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2073"/>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Expiry Date</label>
+                            <input type="text" class="form-control" placeholder="2079"/>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label>Types of Identity Card </label>
+                            <input type="text" class="form-control"placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Identification No.</label>
+                            <input type="text" class="form-control" placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="checkbox" id="minor" name="minor"> <span class="label-text"></span>
+                            <label>Minor</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Issuance Authority </label>
+                            <input type="text" class="form-control" placeholder=""/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Issue Date</label>
+                            <input type="text" class="form-control" placeholder="2079"/>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="nstep2">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Address </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label class="text-primary text-bold">Correspondence Address</label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Country *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Zone</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>District *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>VDC / Municipality / Metropolitan *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Tole</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Ward No. *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Block No.</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Telephone No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Mobile No. *</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Fax No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Email ID. *</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label class="text-primary text-bold">Permanent Address</label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Zone</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>District *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>VDC / Municipality / Metropolitan *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Tole</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Ward No. *</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Block No.</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Telephone No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Mobile No. *</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Fax No.</label>
+                            <input type="number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Email ID. *</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Nearest Landmark</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <h1 class="text-center text-success text-bold"> Details of Family Members </h1>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Grand Father's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Father's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Mother's Name *</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Spouse's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Son's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Daughter in-Law's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Father in-Law's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="nstep3">
+            <div class="default-panel">
+                <div class="row">
+                    <h1 class="text-center text-success text-bold"> Occupation Detail </h1>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label>Occupation *</label>
+                            <div class="input-group input-group-multiple-selectp col-md-12">
+                                <select class="form-control" id="occupationSelector" name="occupationSelector">
+                                    <option value="">Select one</option>
+                                    <option value="1">Service</option>
+                                    <option value="2">Government</option>
+                                    <option value="3">Public/Private Sector</option>
+                                    <option value="4">O/INGO</option>
+                                    <option value="5">Legal Expert</option>
+                                    <option value="6">Expert</option>
+                                    <option value="7">Inessperson</option>
+                                    <option value="8">Student</option>
+                                    <option value="9">Retired</option>
+                                    <option value="10">House Wife</option>
+                                    <option value="Others" id="occupationOthers">Others</option>
+                                </select>
+
+                                <div class="form-group" class="occupationOthersForm" id="occupationOthersForm">
+                                    <br>
+                                    <input type="text" class="form-control" name="occupationOthersForm" placeholder="Occupation"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Types of Business</label>
+                            <div class="input-group input-group-multiple-selectp col-md-12">
+                                <select class="form-control">
+                                    <option value="">Select one</option>
+                                    <option value="1">Manufacturing</option>
+                                    <option value="2">Service Oriented</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Organization's Name</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Address</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Designation</label>
+                            <input type="text" class="form-control"placeholder="">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Financial Details (Income Limit - Annual Details) *</label> <br>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Upto Rs. 1,00,000</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""> <span class="label-text">Upto Rs. From Rs. 1,00,001 to Rs. 2,00,000</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""> <span class="label-text">From Rs. 2,00,001 to Rs. 5,00,000</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Above Rs. 5,00,000</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Standing Instructions for the automatic transactions *</label> <br>
+                            <div class="col-md-6">
+                                <input type="checkbox" name=""> <span class="label-text">Yes</span>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="checkbox" name=""> <span class="label-text">No</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label>Account Statement *</label> <br>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">As Per Request</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Daily</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Weekly</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">15 Days</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="checkbox" name=""> <span class="label-text">Monthly</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <br> <label>Signature __________________________________ </label>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                            <br>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3 rightThumb text-center">
+                                Right
+                            </div>
+                            <div class="col-md-3 leftThumb text-center">
+                                Left
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                    <div class="guardianDetail" id="guardianDetail">
+                        <h1 class="text-center text-success text-bold"> Guardian's Detail </h1>
+                        <form>
+                            <div class="form-group col-md-12">
+                                <label>Name / Surname *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder="Name"/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Relationship with applicant *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-bold text-primary">Correspondance Address</label>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Country *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Zone</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>District *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Fax No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Telephone No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Mobile No. *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>PAN No.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Email ID *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Gaurdian's Citizenship Number *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <br> <label>Signature * __________________________________ </label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                                <br>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3 rightThumb text-center">
+                                    Right
+                                </div>
+                                <div class="col-md-3 leftThumb text-center">
+                                    Left
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+
+
+
+
+                            <div class="form-group col-md-12">
+                                <p class="text-bold text-primary">Foreign Address</p>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>City *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>State *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Country *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>NRN Code No. *</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Applicant's Name * </label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder=""/>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <br> <label>Signature __________________________________ </label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                                <br>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3 rightThumb text-center">
+                                    Right
+                                </div>
+                                <div class="col-md-3 leftThumb text-center">
+                                    Left
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-success pull-right next-btn">Save and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="nstep4">
+            <div class="default-panel">
+                <div class="row">
+                    <div class="row">
+                        <h1 class="text-center text-success text-bold"> Bank Account Details </h1>
+                        <form>
+                            <label>Types of Bank Account *</label> <br>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""/> <span class="label-text">Saving Account</span>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name=""/> <span class="label-text">Current Account</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="form-group col-md-12">
+                                <label>Back Account Number *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Name and Address of Bank *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+
+                        <h1 class="text-center text-success text-bold"> Nominee's Details </h1>
+                        <p class="text-center"> In the event of my death or incapacity, the following named nominee shall be entitled to the balance of my demat account: </p>
+                        <form>
+                            <div class="form-group col-md-12">
+                                <label>Name of Nominee *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Relationship *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Citizenship / Passport No. *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Place of Issue *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Age *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+
+                            <h1 class="text-center text-success text-bold"> Correspondence Address </h1>
+
+                            <div class="form-group col-md-6">
+                                <label>Country *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Zone </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>District *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Telephone No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Fax No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Mobile No. *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>PAN No. </label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Email ID *</label> <br>
+                                <input type="text" class="form-control" name=""/>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <br> <label>Signature * __________________________________ </label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Thumb Print</span> </label>
+                                <br>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3 rightThumb text-center">
+                                    Right
+                                </div>
+                                <div class="col-md-3 leftThumb text-center">
+                                    Left
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="text-center" style="display: block"> <span class="text-center"> Location Map</span> </label>
+                                <br>
+                                <div class="col-md-12 locationMap text-center">
+                                    <p class="bottomText"> From main Road Street ....... the distance of the Residence is ........ meters (approximately).</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="col-md-12">
+                            <button class="btn btn-success pull-right next-btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--For Non Resident Nepales-->
+
+
+</body>
+</html>
